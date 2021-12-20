@@ -11,10 +11,4 @@ public class HelloController {
     public String getHello(){
         return "index";
     }
-
-    @GetMapping("/test")
-    public String getHelloTest(Model model){
-        model.addAttribute("data", "테스트");
-        return "test/hello";
-    }
 }
