@@ -10,6 +10,6 @@ public class HelloController {
     @GetMapping("/")
     public String getHello(Model model){
         model.addAttribute("data", "이상훈");
-        return "hello";
+        return "index";
     }
 }
