@@ -10,12 +10,12 @@ public class HelloController {
     @GetMapping("/index")
     public String getHello(Model model){
         model.addAttribute("data", "이상훈");
-        return "/index";
+        return "index";
     }
 
     @GetMapping("/test")
     public String getHelloTest(Model model){
         model.addAttribute("data", "테스트");
-        return "/test/hello";
+        return "test/hello";
     }
 }
